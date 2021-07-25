@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form">
+        <div class="input-box">
+            <label for="type">Tipo de inmueble:</label>
+            <select name="type" id="tipoInmueble">
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label>Cantidad de metros cuadrados</label>
+            <input type="number" id="metrosCuadrados">
+        </div>
+        <div>
+            <label for="catidadPersonas">Cantidad de personas</label>
+            <input type="number" class="input" id="catidadPersonas" min="1" max="10" />
+        </div>
+        <div id="generos-edades">
+            <div class="input-box">
+                <div>
+                    <label for="genero">Genero</label>
+                    <select name="genero" id="genero" class="genero">
+                        <option value="">Escoja un genero</option>
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="edad">Edad</label>
+                <input type="number" class="edad" id="edad" />
+            </div>
+        </div>
+        <button type="button" id="btnCalcular">Calcular</button>
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <th id="tipoInmueble">Señores</th>
+            <th>Cuota del mes</th>
+        </tr>
+        <tr>
+            <td>Valor administración</td>
+            <td id="resultadoAdministracion"></td>
+        </tr>
+        <tr>
+            <td>Valor couta de aseo</td>
+            <td id="resultadoCuotaAseo"></td>
+        </tr>
+        <tr>
+            <td>Valor de Gimnasio</td>
+            <td id="resultadoValorGimnasio"></td>
+        </tr>
+        <tr>
+            <th>TOTAL A PAGAR</th>
+            <td id="resultadoTotalPagar"></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
